@@ -11,6 +11,14 @@ public class Paddle : MonoBehaviour
     }
     private void Start()
     {
+        ResetPosition();
+    }
+
+    public void ResetPosition()
+    {
+        ridigbody.position = Vector3.zero;
+        ridigbody.velocity = Vector3.zero;
+
         AddStartupVelocity();
     }
 
