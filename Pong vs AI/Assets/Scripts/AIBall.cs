@@ -2,12 +2,8 @@ using UnityEngine;
 
 public class AIBall : Balls
 {
-    public Rigidbody Paddle;
+    public Rigidbody2D Paddle;
 
-    public void Awake()
-    {
-        Paddle = GetComponent<Rigidbody>();
-    }
     private void FixedUpdate()
     {
         if (this.Paddle.velocity.x > 0.0f)
