@@ -4,6 +4,10 @@ public class PlayerBall : Balls
 {
     private Vector2 direction;
 
+
+
+    // Since there's only one player, they can use either W and S, or up and down arrows.
+    // I've seen other games do similar things before.
     private void Update()
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))

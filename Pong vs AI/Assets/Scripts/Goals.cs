@@ -5,6 +5,9 @@ using UnityEngine.UIElements;
 public class Goals : MonoBehaviour
 {
 
+
+    // An event being triggered defines when a goal is scored for either side
+
     public EventTrigger.TriggerEvent scoreTrigger;
 
     private void OnCollisionEnter2D(Collision2D collision)

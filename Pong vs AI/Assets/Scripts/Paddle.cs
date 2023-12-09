@@ -14,6 +14,8 @@ public class Paddle : MonoBehaviour
         ResetPosition();
     }
 
+
+    // Resets the paddle and adds a random starting velocity to the paddle
     public void ResetPosition()
     {
         ridigbody.position = Vector3.zero;

@@ -6,6 +6,7 @@ public class AIBall : Balls
 
     private void FixedUpdate()
     {
+        // AI which tries to block the ball from being scored on its goal
         if (this.Paddle.velocity.x > 0.0f)
         {
             if (this.Paddle.position.y > this.transform.position.y)
@@ -16,6 +17,8 @@ public class AIBall : Balls
             {
                 ridigbody.AddForce(Vector2.down * this.speed);
             }
+
+            // otherwise just hovers in the middle of its goal
             else
             {
                 if (this.transform.position.y > 0.0f)
